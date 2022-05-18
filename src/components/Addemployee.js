@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Navbar from './Navbar'
 
 const Addemployee = () => {
     var [employeeid,setEmployeeid]=useState("")
@@ -16,7 +17,7 @@ const Addemployee = () => {
     } 
   return (
     <div>
-        
+       <Navbar/> 
     
 
         <div className="container">
