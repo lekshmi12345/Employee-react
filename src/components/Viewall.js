@@ -40,23 +40,34 @@ const Viewall = () => {
         <div className="container">
     <div className="row">
         <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-            <div className="row g-3">
+       <table class="table table-success table-striped">
+  <thead>
+    <tr>
+      
+      <th scope="col">Empid</th>
+      <th scope="col">Empname</th>
+      <th scope="col">Salary</th>
+      
+      <th scope="col">Designation</th>
+    </tr>
+  </thead>
+  <tbody>
                 
                     {post.map((value,key)=>{
-return <div className='col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3'>
-    <ul class="list-group list-group-vertical">
-        <center>
-  <li class="list-group-item-primary">id:{value.id}</li>
-  <li class="list-group-item-secondary">name:{value.name}</li>
-  <li class="list-group-item-success">salary:{value.salary}</li>
-  <li class="list-group-item-danger">designation:{value.designation}</li>
-  </center>
-</ul>
+return <tr>
+      
+      <td>{value.id}</td>
+      <td>{value.name}</td>
+      <td>{value.salary}</td>
+      <td>{value.designation}</td>
+    </tr>
+    
+  
 
-
-</div>
                     })}
-                </div>
+               
+  </tbody>
+</table>
             </div>
         </div>
     </div>
